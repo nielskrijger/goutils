@@ -1,0 +1,23 @@
+linters:
+  enable-all: true
+  disable:
+    - gochecknoglobals # usually just false positives
+    - maligned # deprecated
+    - scopelint # deprecated
+    - paralleltest # lots of code, little gain; prefer using t.Parallel() only for slow tests
+    - exhaustivestruct # just a pain, not too useful
+    - tagliatelle # restricts json/yaml formatting, not applicable in this app
+    - goconst # finds repeated strings >= 3 times; but usually that's OK
+linters-settings:
+  exhaustive:
+    default-signifies-exhaustive: true # enable "default"-case in switch as catch-all for all other options
+
+issues:
+  # Maximum issues count per one linter. Set to 0 to disable. Default is 50.
+  max-per-linter: 0
+
+  # Maximum count of issues with the same text. Set to 0 to disable. Default is 3.
+  max-same-issues: 0
+
+output:
+  sort-results: true
