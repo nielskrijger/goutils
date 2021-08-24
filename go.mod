@@ -13,6 +13,7 @@ require (
 	github.com/rs/zerolog v1.23.0
 	github.com/satori/go.uuid v1.2.0
 	github.com/stretchr/testify v1.7.0
+	github.com/tidwall/gjson v1.8.1
 	golang.org/x/text v0.3.6
 	google.golang.org/genproto v0.0.0-20210726200206-e7812ac95cc0
 	google.golang.org/grpc v1.39.0
